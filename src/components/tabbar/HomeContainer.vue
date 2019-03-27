@@ -11,24 +11,30 @@
         </mt-swipe>
         <!-- 九宫格到六宫格改造 -->
         <ul class="mui-table-view mui-grid-view mui-grid-9">
-            <li class="mui-table-view-cell mui-media mui-col-xs-4 mui-col-sm-3"><a href="#">
+            <li class="mui-table-view-cell mui-media mui-col-xs-4 mui-col-sm-3">
+                <router-link to="/home/newslist">
                     <img src="../../images/logol1.png" alt="">
-                    <div class="mui-media-body">新闻资讯</div></a></li>
-            <li class="mui-table-view-cell mui-media mui-col-xs-4 mui-col-sm-3"><a href="#">
+                    <div class="mui-media-body">新闻资讯</div></router-link></li>
+            <li class="mui-table-view-cell mui-media mui-col-xs-4 mui-col-sm-3">
+                <router-link to="/home/newslist">
                     <img src="../../images/logol2.png" alt="">
-                    <div class="mui-media-body">图片分享</div></a></li>
-            <li class="mui-table-view-cell mui-media mui-col-xs-4 mui-col-sm-3"><a href="#">
+                    <div class="mui-media-body">图片分享</div></router-link></li>
+            <li class="mui-table-view-cell mui-media mui-col-xs-4 mui-col-sm-3">
+                <router-link to="/home/newslist">
                     <img src="../../images/logol3.png" alt="">
-                    <div class="mui-media-body">商品购买</div></a></li>
-            <li class="mui-table-view-cell mui-media mui-col-xs-4 mui-col-sm-3"><a href="#">
+                    <div class="mui-media-body">商品购买</div></router-link></li>
+            <li class="mui-table-view-cell mui-media mui-col-xs-4 mui-col-sm-3">
+                <router-link to="/home/newslist">
                     <img src="../../images/logol4.png" alt="">
-                    <div class="mui-media-body">留言反馈</div></a></li>
-            <li class="mui-table-view-cell mui-media mui-col-xs-4 mui-col-sm-3"><a href="#">
+                    <div class="mui-media-body">留言反馈</div></router-link></li>
+            <li class="mui-table-view-cell mui-media mui-col-xs-4 mui-col-sm-3">
+                <router-link to="/home/newslist">
                     <img src="../../images/logol5.png" alt="">
-                    <div class="mui-media-body">视频专区</div></a></li>
-            <li class="mui-table-view-cell mui-media mui-col-xs-4 mui-col-sm-3"><a href="#">
+                    <div class="mui-media-body">视频专区</div></router-link></li>
+            <li class="mui-table-view-cell mui-media mui-col-xs-4 mui-col-sm-3">
+                <router-link to="/home/newslist">
                     <img src="../../images/logol6.png" alt="">
-                    <div class="mui-media-body">联系我们</div></a></li>
+                    <div class="mui-media-body">联系我们</div></router-link></li>
            
         </ul> 
        
@@ -49,7 +55,7 @@ export default {
         
     //     getLunbotu(){
     //         // this.$http.get("https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1553508626708&di=6c41b2fa77bc86bd7e5285bc7d8b1ff6&imgtype=0&src=http%3A%2F%2Fpic22.nipic.com%2F20120714%2F9622064_105642209176_2.jpg").then(result=>{
-    //         // this.$http.get("http://vue.studyit.io/api/getlunbo").then(result=>{
+    //         // this.$http.get("api/getlunbo").then(result=>{
     //         //    if(result.body.status===0){
     //         //        this.lunboList=result.body.message;
     //         //    }else{
