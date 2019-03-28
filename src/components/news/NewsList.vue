@@ -4,7 +4,7 @@
       <ul class="mui-table-view">
           <!-- 获取数据后进行页面渲染的方法 -->
           <!-- <li class="mui-table-view-cell mui-media" v-for="item in newslist"
-          :key="iyem.id">
+          :key="item.id">
             <router-link :to="'/home/NewsInfo/'+item.id">
                 <img class="mui-media-object mui-pull-left" src="item.img_url">
                 <div class="mui-media-body">

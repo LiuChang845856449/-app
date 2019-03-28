@@ -3,9 +3,9 @@
       <h3>发表评论</h3>  
       <hr>
       <textarea placeholder="最多吐槽20字符！！"
-      maxlength="120"></textarea>
+      maxlength="120" v-model="msg"></textarea>
       
-      <mt-button type="primary" size="large">发表评论</mt-button>
+      <mt-button type="primary" size="large" @click="postComment">发表评论</mt-button>
      
       <div class="cmt-list">
           <div class="cmt-item">
@@ -43,14 +43,18 @@
     </div> -->
 </template>
 <script>
+import{Toast} from "mint-ui"
 export default {
     data(){
         return{
             // pageIndex:1
+
+            msg:''
         }
     },
     created(){
         // this.getComment();
+        this.postComment()
     },
     methods: {
         // getComment(){
@@ -70,11 +74,37 @@ export default {
         // },
         // props:[id]
 
-    },
+    
+    postComment(){
+        if(this.msg.trim().length ===0){
+            return Toast ("评论内容不能为空")
+        }
+        //post参数
+        //1，请求的url地址
+        //2.提交给服务器的数据对象{content：this.mag}
+        //3.定义提交时候，表单中的数据的格式{emulateJSON：true}
+        this.$http.post("api/postcommet"+this.$route.params.id,
+        {content:this.msg.trim()
+        })
+        .then(function(result){
+            if(result.body.status===0){
+                var cmt ={
+                    user_name:"匿名用户",
+                    add_time:Data.now(),
+                    content:this.msg.trin()
+
+                };
+                this.comment.unshift(cmt);
+                this.msg=''
+            }
+        })
+
+    }
     // 
     
-}
+}}
 </script>
+
 <style lang="">
     
     h3{ font-size:16px;}
