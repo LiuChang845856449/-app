@@ -17,7 +17,7 @@
     
         <div class="goods-item">
             <img src="../../images/goods/1.png" alt="">
-            <h1 >oppo手机 64g 全网通 渲染你的美</h1>
+            <h1 >oppo手机 64g 全网通 渲染你的美oppo手机 64g 全网通 渲染你的美</h1>
             <div class="info">
                 <p class="price">
                     <span class="now">￥999</span>
@@ -63,6 +63,12 @@ export default {
     border: 1px solid #ccc;
     box-shadow:0 0 8px #ccc;
     margin: 3px 0;
+    padding:2px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    /* min-height: 272px; */
+
 }
 img{
     width:100%;
@@ -93,6 +99,7 @@ p{
 .sell{
     display: flex;
     justify-content: space-between;
+    font-size: 12px；
 }
 
     
