@@ -14,6 +14,62 @@
                 </p>
             </div>
         </div>
+        <div class="goods-item">
+            <img src="../../images/goods/1.png" alt="">
+            <h1 >oppo手机 64g 全网通 渲染你的美</h1>
+            <div class="info">
+                <p class="price">
+                    <span class="now">￥999</span>
+                    <span class="old">￥1099</span>
+                </p>
+                <p class="sell">
+                    <span>热卖中</span>
+                    <span>剩60件</span>
+                </p>
+            </div>
+        </div>
+        <div class="goods-item">
+            <img src="../../images/goods/1.png" alt="">
+            <h1 >oppo手机 64g 全网通 渲染你的美</h1>
+            <div class="info">
+                <p class="price">
+                    <span class="now">￥999</span>
+                    <span class="old">￥1099</span>
+                </p>
+                <p class="sell">
+                    <span>热卖中</span>
+                    <span>剩60件</span>
+                </p>
+            </div>
+        </div>
+        <div class="goods-item">
+            <img src="../../images/goods/1.png" alt="">
+            <h1 >oppo手机 64g 全网通 渲染你的美</h1>
+            <div class="info">
+                <p class="price">
+                    <span class="now">￥999</span>
+                    <span class="old">￥1099</span>
+                </p>
+                <p class="sell">
+                    <span>热卖中</span>
+                    <span>剩60件</span>
+                </p>
+            </div>
+        </div>
+        <div class="goods-item">
+            <img src="../../images/goods/1.png" alt="">
+            <h1 >oppo手机 64g 全网通 渲染你的美</h1>
+            <div class="info">
+                <p class="price">
+                    <span class="now">￥999</span>
+                    <span class="old">￥1099</span>
+                </p>
+                <p class="sell">
+                    <span>热卖中</span>
+                    <span>剩60件</span>
+                </p>
+            </div>
+        </div>
     
         <div class="goods-item">
             <img src="../../images/goods/1.png" alt="">
@@ -83,7 +139,7 @@ p{
     margin: 0;
     padding: 5px;
 }
-.price{}
+
 .now{
     
     color: red;

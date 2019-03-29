@@ -1,6 +1,7 @@
 <template>
     <div>
         <!-- 轮播图区域 -->
+      
         <mt-swipe :auto="4000">
             <!-- <mt-swipe-item v-for="item in lunbotuList" :key="item.url">
                 <img :src="item.img">
@@ -9,6 +10,7 @@
             <mt-swipe-item><img src="../../images/Home/2.jpg" alt=""></mt-swipe-item>
             <mt-swipe-item><img src="../../images/Home/3.jpg" alt=""></mt-swipe-item>
         </mt-swipe>
+       
         <!-- 九宫格到六宫格改造 -->
         <ul class="mui-table-view mui-grid-view mui-grid-9">
             <li class="mui-table-view-cell mui-media mui-col-xs-4 mui-col-sm-3">
@@ -70,8 +72,9 @@ export default {
 </script>
 <style lang="" scoped>
  /* body {background: url('../static/img/back5.jpg');} */
+   
     .mint-swipe{
-        height: 200px;
+        height: 300px;
      }
     .mint-swipe-item:nth-child(1){
        
@@ -88,10 +91,15 @@ export default {
     img{
         width: 100%;
         height: 100%;
+       
     }
+    /* .img1{
+        height: 400px;
+    } */
      .mui-table-view.mui-grid-9{
          background-color:#ffff;
          border:none;
+         /* margin-top: 200px; */
      }
      .mui-grid-view.mui-grid-9 .mui-table-view-cell{
          border:0;
@@ -105,6 +113,8 @@ export default {
      .mui-media-body{
         font-size: 13px; 
      }
+     
+    
 
    
 </style>
