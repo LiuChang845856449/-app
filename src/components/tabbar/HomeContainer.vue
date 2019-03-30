@@ -2,15 +2,15 @@
     <div>
         <!-- 轮播图区域 -->
       
-        <mt-swipe :auto="4000">
-            <!-- <mt-swipe-item v-for="item in lunbotuList" :key="item.url">
-                <img :src="item.img">
-            </mt-swipe-item> -->
-            <mt-swipe-item><img src="../../images/Home/1.jpg" alt=""></mt-swipe-item>
+        <!-- <mt-swipe :auto="4000"> -->
+                    <!-- <mt-swipe-item v-for="item in lunbotuList" :key="item.url">
+                        <img :src="item.img">
+                    </mt-swipe-item> -->
+            <!-- <mt-swipe-item><img src="../../images/Home/1.jpg" alt=""></mt-swipe-item>
             <mt-swipe-item><img src="../../images/Home/2.jpg" alt=""></mt-swipe-item>
             <mt-swipe-item><img src="../../images/Home/3.jpg" alt=""></mt-swipe-item>
-        </mt-swipe>
-       
+        </mt-swipe> -->
+       <swiper ></swiper>
         <!-- 九宫格到六宫格改造 -->
         <ul class="mui-table-view mui-grid-view mui-grid-9">
             <li class="mui-table-view-cell mui-media mui-col-xs-4 mui-col-sm-3">
@@ -44,6 +44,8 @@
 </template>
 <script>
 // import {Toast} from 'mint-ui'
+// import swiper from '../subconponents/swiper.vue'
+import swiper from '../subcomponents/swiper.vue'
 export default {
     data(){
         return{
@@ -66,6 +68,9 @@ export default {
                 
     //         });
     //     }
+    },
+    components:{
+        swiper
     }
     
 }

@@ -10,6 +10,11 @@ import NewsInfo from './components/news/Newsinfo.vue'
 import PhotosList from './components/photos/PhotosList.vue'
 import PhotoInfo from './components/photos/PhotoInfo.vue'
 import GoodsList from './components/goods/GoodsList.vue'
+import GoodsInfo from './components/goods/GoodsInfo.vue'
+import GoodsDesc from './components/goods/GoodsDesc.vue'
+import GoodsComments from './components/goods/GoodsComments.vue'
+
+
 
 Vue.use(VueRouter)
 var router=new VueRouter({
@@ -24,7 +29,12 @@ var router=new VueRouter({
         {path:'/home/newsinfo',component:NewsInfo},
         {path:'/home/photoslist',component:PhotosList},
         {path:'/home/photoinfo',component:PhotoInfo},
-        {path:'/home/goodslist',component:GoodsList}
+        {path:'/home/goodslist',component:GoodsList},
+        {path:'/home/goodslist/goodsinfo',component:GoodsInfo},
+        {path:'/home/goodslist/goodsinfo/goodsdesc',component:GoodsDesc},
+        {path:'/home/goodslist/goodsinfo/goodscomments',component:GoodsComments},
+
+
        
         
     ],

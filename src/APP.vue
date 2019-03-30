@@ -1,7 +1,7 @@
 <template>
     <div class="app-container">
         <!-- 顶部header区 -->
-        <mt-header fixed title="黑马程序员Vue项目"></mt-header>
+        <mt-header fixed title="多功能Vue项目"></mt-header>
         <!-- 中间路由区 -->
 		<transition>
 			<router-view></router-view>

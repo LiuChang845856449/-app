@@ -10,7 +10,7 @@
       <div class="cmt-list">
           <div class="cmt-item">
               <div class="cmt-title">
-                  第一楼    $nbsp;$nbsp;用户:$nbsp;$nbsp;发表时间：2012.3.6 
+                  第一楼    &nbsp;&nbsp;用户:&nbsp;&nbsp;发表时间：2012.3.6 
               </div>
               <div class="comlist-body">
                   锄禾日当午
@@ -76,6 +76,7 @@ export default {
 
     
     postComment(){
+        
         if(this.msg.trim().length ===0){
             return Toast ("评论内容不能为空")
         }

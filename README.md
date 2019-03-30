@@ -95,7 +95,7 @@ babel-plugin-transform-remove-strict-mode
 1.保证手机是正常运行的
 2.保证手机和电脑处于同一个WiFi环境中，手机可以访问到电脑的ip，
 3.打开自己的项目中package.json 文件中，在dev脚本中，添加一个 --host 指令，把当前电脑的WiFi ip地址，设置为 --host的指令值
-+如何查看自己电脑所处的ip,dev 中设置 -- post ip地址，即可。
++如何查看自己电脑所处的ip,dev 中设置 -- host ip地址，即可。
 
 
 
