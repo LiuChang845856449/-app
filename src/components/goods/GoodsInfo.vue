@@ -37,12 +37,19 @@
                         销售价：<span class="noe_price">￥2199</span>
                     </p>
                     <p >
-                        购买数量：<goodsnum class="p1"></goodsnum>
+                        购买数量：<goodsnum class="p1" @getcount="getSelectedCount"></goodsnum>
+                        <!--  -->
                     </p>
                     <p>
                         <mt-button type="primary" size="small">立即购买</mt-button>
                         <mt-button type="danger" size="small"
                         @click="addShopCar()">加入购物车</mt-button>
+                    <!-- 分析如何实现加入购物车后，拿到选择的数量
+                    1.经分析发现，按钮属于goodsinfo页面，数字属于numberbox组件
+                    2.由于涉及到了父子组件的嵌套，所以无法直接在goodsinfo 页面中获取到选中商品的数量值
+                    3.解决问题的方法，涉及到子组件向父组件传值
+                    4.时间调用的本质：父向子传递方法，子调用这个方法，同时把数据当做参数传递给这个方法。 -->
+
                     </p>
                 </div>
             </div>
@@ -76,7 +83,9 @@ import goodsnum from '../subcomponents/goodsnum.vue'
 export default {
     data(){
         return {
-            ballFlag:false//小球标识符true
+            ballFlag:false,//小球标识符true
+          
+            selectedCount:1//保存用户选中的商品数量
         }
     },
     methods:{
@@ -111,10 +120,18 @@ export default {
             
 
         },
+       
+        getSelectedCount(count){
+            //
+            this.selectedCount=count;
+            console.log('父组件拿到的值为：'+this.selectedCount)
+
+        }
   
           
 
     },
+    // probs:["max"],
     components:{
         swiper,
         goodsnum,
