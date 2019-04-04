@@ -32,6 +32,8 @@ import './lib/mui/css/icons-extra.css'
 // Vue.component(SwipeItem.name, SwipeItem);
 // Vue.component(Button.name, Button);
 // Vue.use(Lazyload)
+
+//全局导入Mint-ui
 import MintUI from 'mint-ui'
 Vue.use(MintUI)
 import 'mint-ui/lib/style.css'

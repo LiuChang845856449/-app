@@ -140,16 +140,19 @@ export default {
     width: 49%;
     border: 1px solid #ccc;
     box-shadow:0 0 8px #ccc;
-    margin: 3px 0;
+    margin: 3px 0px;
+    /* margin-top: 0;
+    margin-top: 30px; */
     padding:2px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    /* min-height: 272px; */
+    min-height: 300px;
 
 }
 img{
     width:100%;
+    height: 100%;
 }
 h1{
     font-size: 16px;
